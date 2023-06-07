@@ -1,0 +1,12 @@
+CREATE TABLE pets (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    type VARCHAR(255) NOT NULL,
+    age INTEGER NOT NULL,
+    parent_id INTEGER
+);
+CREATE TABLE parents(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    phone_number VARCHAR(18) NOT NULL
+)
